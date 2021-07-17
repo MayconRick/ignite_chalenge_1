@@ -27,7 +27,7 @@ export function Home() {
 
     updatedTasks.find(task => {
       if (task.id == id) {
-        task.done = true;
+        task.done ? false : true;
       }
     })
 
